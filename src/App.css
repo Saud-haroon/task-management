@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #9cb6da;
+  color: #eeecda;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #162d4e;
+  align-items: center;
+  width: fit-content;
+}
+
+section {
+  display: flex;
+  width: 70rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  border: 1px solid #835c13;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  background-color: #9ad3bc;
+  border-color: #9ad3bc;
+  color: #162d4e;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-right: 0.25rem;
+
+}
+
+.button:hover {
+  background-color: #2ec1ac;
+  border-color: #2ec1ac;
+  cursor: pointer;
+
+}
+
+.button:focus {
+  outline: none;
+  border-color: #2ec1ac;
+  background-color: #2ec1ac;
+  color: #eeecda;
+}
+
+.addTask {
+  font-size: 3rem;
+  padding: 0 0 0.4rem 0;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 1rem;
+  margin-top: 2rem;
+}
+
+.moveTask {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0;
+  line-height: 1rem;
+}
+
+.delete {
+  background-color: #ffa5a5;
+  border-color: #ffa5a5;
+
+  
+}
+.delete:hover {
+  background-color: #ff8282;
+  border-color: #0c0505;
+}
+
+center{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 30rem;
+  margin: auto;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+@media only screen and (max-width: 75rem) {
+  section {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
